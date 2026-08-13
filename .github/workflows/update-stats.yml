@@ -3,7 +3,7 @@ name: Update GitHub Stats SVG
 on:
   schedule:
     - cron: '0 0 * * *' # Se ejecuta automáticamente todos los días a medianoche UTC
-  workflow_dispatch: # Permite ejecutar el Action manualmente cuando quieras desde la pestaña Actions
+  workflow_dispatch: # Permite ejecutar el Action manualmente desde la pestaña Actions
 
 jobs:
   update-svg:
