@@ -1,35 +1,122 @@
-<svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
-  <rect width="100%" height="100%" rx="10" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
-  <text x="20" y="25" fill="#58a6ff" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" font-weight="600">Lenguajes más usados</text>
+<svg width="350" height="290" viewBox="0 0 350 290" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .card-bg { fill: #0d1117; stroke: #30363d; stroke-width: 1px; rx: 12px; }
+    .header-title { fill: #58a6ff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15px; font-weight: 600; }
+    .lang-name { fill: #c9d1d9; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 500; }
+    .lang-pct { fill: #8b949e; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 12px; text-anchor: end; font-weight: 500; }
+    
+    .lang-row { transition: transform 0.2s ease; }
+    .lang-row:hover .bar { filter: brightness(1.3); }
+    .lang-row:hover .lang-name { fill: #58a6ff; }
+    
+    
+      @keyframes fillBar0 {
+        from { width: 0px; }
+        to { width: 82.9px; }
+      }
+      .bar-0 {
+        animation: fillBar0 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+      }
+    
+
+      @keyframes fillBar1 {
+        from { width: 0px; }
+        to { width: 68.3px; }
+      }
+      .bar-1 {
+        animation: fillBar1 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+      }
+    
+
+      @keyframes fillBar2 {
+        from { width: 0px; }
+        to { width: 42.9px; }
+      }
+      .bar-2 {
+        animation: fillBar2 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+      }
+    
+
+      @keyframes fillBar3 {
+        from { width: 0px; }
+        to { width: 40.1px; }
+      }
+      .bar-3 {
+        animation: fillBar3 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+      }
+    
+
+      @keyframes fillBar4 {
+        from { width: 0px; }
+        to { width: 33.1px; }
+      }
+      .bar-4 {
+        animation: fillBar4 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+      }
+    
+  </style>
+
+  <rect width="100%" height="100%" class="card-bg" />
+  <text x="25" y="30" class="header-title">Lenguajes más usados</text>
   
-      <g transform="translate(20, 45)">
-        <circle cx="8" cy="-5" r="6" fill="#f1e05a" />
-        <text x="22" y="0" fill="#c9d1d9" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13">JavaScript</text>
-        <text x="260" y="0" fill="#8b949e" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" text-anchor="end">27.5%</text>
+      <g class="lang-row" transform="translate(25, 55)">
+        <circle cx="6" cy="-4" r="5" fill="#f1e05a" />
+        <text x="20" y="0" class="lang-name">JavaScript</text>
+        <text x="300" y="0" class="lang-pct">27.6%</text>
+        
+        <!-- Pista de fondo de la barra -->
+        <rect x="0" y="8" width="300" height="7" rx="3.5" fill="#21262d" />
+        
+        <!-- Barra de progreso animada -->
+        <rect class="bar bar-0" x="0" y="8" height="7" rx="3.5" fill="#f1e05a" />
       </g>
     
-      <g transform="translate(20, 73)">
-        <circle cx="8" cy="-5" r="6" fill="#3572A5" />
-        <text x="22" y="0" fill="#c9d1d9" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13">Python</text>
-        <text x="260" y="0" fill="#8b949e" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" text-anchor="end">22.8%</text>
+      <g class="lang-row" transform="translate(25, 100)">
+        <circle cx="6" cy="-4" r="5" fill="#3572A5" />
+        <text x="20" y="0" class="lang-name">Python</text>
+        <text x="300" y="0" class="lang-pct">22.8%</text>
+        
+        <!-- Pista de fondo de la barra -->
+        <rect x="0" y="8" width="300" height="7" rx="3.5" fill="#21262d" />
+        
+        <!-- Barra de progreso animada -->
+        <rect class="bar bar-1" x="0" y="8" height="7" rx="3.5" fill="#3572A5" />
       </g>
     
-      <g transform="translate(20, 101)">
-        <circle cx="8" cy="-5" r="6" fill="#222c37" />
-        <text x="22" y="0" fill="#c9d1d9" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13">ShaderLab</text>
-        <text x="260" y="0" fill="#8b949e" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" text-anchor="end">14.3%</text>
+      <g class="lang-row" transform="translate(25, 145)">
+        <circle cx="6" cy="-4" r="5" fill="#222c37" />
+        <text x="20" y="0" class="lang-name">ShaderLab</text>
+        <text x="300" y="0" class="lang-pct">14.3%</text>
+        
+        <!-- Pista de fondo de la barra -->
+        <rect x="0" y="8" width="300" height="7" rx="3.5" fill="#21262d" />
+        
+        <!-- Barra de progreso animada -->
+        <rect class="bar bar-2" x="0" y="8" height="7" rx="3.5" fill="#222c37" />
       </g>
     
-      <g transform="translate(20, 129)">
-        <circle cx="8" cy="-5" r="6" fill="#663399" />
-        <text x="22" y="0" fill="#c9d1d9" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13">CSS</text>
-        <text x="260" y="0" fill="#8b949e" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" text-anchor="end">13.4%</text>
+      <g class="lang-row" transform="translate(25, 190)">
+        <circle cx="6" cy="-4" r="5" fill="#663399" />
+        <text x="20" y="0" class="lang-name">CSS</text>
+        <text x="300" y="0" class="lang-pct">13.4%</text>
+        
+        <!-- Pista de fondo de la barra -->
+        <rect x="0" y="8" width="300" height="7" rx="3.5" fill="#21262d" />
+        
+        <!-- Barra de progreso animada -->
+        <rect class="bar bar-3" x="0" y="8" height="7" rx="3.5" fill="#663399" />
       </g>
     
-      <g transform="translate(20, 157)">
-        <circle cx="8" cy="-5" r="6" fill="#e34c26" />
-        <text x="22" y="0" fill="#c9d1d9" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13">HTML</text>
-        <text x="260" y="0" fill="#8b949e" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" text-anchor="end">11.1%</text>
+      <g class="lang-row" transform="translate(25, 235)">
+        <circle cx="6" cy="-4" r="5" fill="#e34c26" />
+        <text x="20" y="0" class="lang-name">HTML</text>
+        <text x="300" y="0" class="lang-pct">11.0%</text>
+        
+        <!-- Pista de fondo de la barra -->
+        <rect x="0" y="8" width="300" height="7" rx="3.5" fill="#21262d" />
+        
+        <!-- Barra de progreso animada -->
+        <rect class="bar bar-4" x="0" y="8" height="7" rx="3.5" fill="#e34c26" />
       </g>
     
 </svg>
