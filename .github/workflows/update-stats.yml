@@ -21,7 +21,7 @@ jobs:
 
       - name: Execute script
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH.PAT }}
         run: node generate-stats.js
 
       - name: Commit and push changes
