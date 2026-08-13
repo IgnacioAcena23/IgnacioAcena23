@@ -46,6 +46,7 @@ async function fetchStats() {
     repo.languages.edges.forEach(edge => {
       const { name, color } = edge.node;
       const size = edge.size;
+      if (name === 'Jupyter Notebook') return;
       totalBytes += size;
 
       if (!stats[name]) {
