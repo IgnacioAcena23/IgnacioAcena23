@@ -58,7 +58,7 @@ async function fetchStats() {
 
   const sorted = Object.entries(stats)
     .sort((a, b) => b[1].bytes - a[1].bytes)
-    .slice(0, 10);
+    .slice(0, 8);
 
   return generateSVG(sorted, totalBytes);
 }
