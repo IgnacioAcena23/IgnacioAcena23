@@ -97,91 +97,91 @@
       <g class="lang-row" transform="translate(25, 55)">
         <circle cx="6" cy="-4" r="5" fill="#f1e05a" />
         <text x="20" y="0" class="lang-name">JavaScript</text>
-        <text x="300" y="0" class="lang-pct">27.6%</text>
+        <text x="300" y="0" class="lang-pct">38.2%</text>
 
         <!-- Pista de fondo de la barra -->
         <rect x="0" y="8" width="270" height="7" rx="3.5" fill="#21262d" />
 
         <!-- Barra de progreso con width explícito + animación por escalado -->
-        <rect class="bar bar-0" x="0" y="8" width="74.6" height="7" rx="3.5" fill="#f1e05a" />
+        <rect class="bar bar-0" x="0" y="8" width="103.0" height="7" rx="3.5" fill="#f1e05a" />
       </g>
     
       <g class="lang-row" transform="translate(25, 100)">
         <circle cx="6" cy="-4" r="5" fill="#3572A5" />
         <text x="20" y="0" class="lang-name">Python</text>
-        <text x="300" y="0" class="lang-pct">22.8%</text>
+        <text x="300" y="0" class="lang-pct">17.0%</text>
 
         <!-- Pista de fondo de la barra -->
         <rect x="0" y="8" width="270" height="7" rx="3.5" fill="#21262d" />
 
         <!-- Barra de progreso con width explícito + animación por escalado -->
-        <rect class="bar bar-1" x="0" y="8" width="61.5" height="7" rx="3.5" fill="#3572A5" />
+        <rect class="bar bar-1" x="0" y="8" width="45.9" height="7" rx="3.5" fill="#3572A5" />
       </g>
     
       <g class="lang-row" transform="translate(25, 145)">
-        <circle cx="6" cy="-4" r="5" fill="#222c37" />
-        <text x="20" y="0" class="lang-name">ShaderLab</text>
-        <text x="300" y="0" class="lang-pct">14.3%</text>
+        <circle cx="6" cy="-4" r="5" fill="#663399" />
+        <text x="20" y="0" class="lang-name">CSS</text>
+        <text x="300" y="0" class="lang-pct">13.9%</text>
 
         <!-- Pista de fondo de la barra -->
         <rect x="0" y="8" width="270" height="7" rx="3.5" fill="#21262d" />
 
         <!-- Barra de progreso con width explícito + animación por escalado -->
-        <rect class="bar bar-2" x="0" y="8" width="38.6" height="7" rx="3.5" fill="#222c37" />
+        <rect class="bar bar-2" x="0" y="8" width="37.5" height="7" rx="3.5" fill="#663399" />
       </g>
     
       <g class="lang-row" transform="translate(25, 190)">
-        <circle cx="6" cy="-4" r="5" fill="#663399" />
-        <text x="20" y="0" class="lang-name">CSS</text>
-        <text x="300" y="0" class="lang-pct">13.4%</text>
+        <circle cx="6" cy="-4" r="5" fill="#e34c26" />
+        <text x="20" y="0" class="lang-name">HTML</text>
+        <text x="300" y="0" class="lang-pct">13.7%</text>
 
         <!-- Pista de fondo de la barra -->
         <rect x="0" y="8" width="270" height="7" rx="3.5" fill="#21262d" />
 
         <!-- Barra de progreso con width explícito + animación por escalado -->
-        <rect class="bar bar-3" x="0" y="8" width="36.1" height="7" rx="3.5" fill="#663399" />
+        <rect class="bar bar-3" x="0" y="8" width="36.9" height="7" rx="3.5" fill="#e34c26" />
       </g>
     
       <g class="lang-row" transform="translate(25, 235)">
-        <circle cx="6" cy="-4" r="5" fill="#e34c26" />
-        <text x="20" y="0" class="lang-name">HTML</text>
-        <text x="300" y="0" class="lang-pct">11.0%</text>
+        <circle cx="6" cy="-4" r="5" fill="#222c37" />
+        <text x="20" y="0" class="lang-name">ShaderLab</text>
+        <text x="300" y="0" class="lang-pct">9.8%</text>
 
         <!-- Pista de fondo de la barra -->
         <rect x="0" y="8" width="270" height="7" rx="3.5" fill="#21262d" />
 
         <!-- Barra de progreso con width explícito + animación por escalado -->
-        <rect class="bar bar-4" x="0" y="8" width="29.8" height="7" rx="3.5" fill="#e34c26" />
+        <rect class="bar bar-4" x="0" y="8" width="26.5" height="7" rx="3.5" fill="#222c37" />
       </g>
     
       <g class="lang-row" transform="translate(25, 280)">
         <circle cx="6" cy="-4" r="5" fill="#178600" />
         <text x="20" y="0" class="lang-name">C#</text>
-        <text x="300" y="0" class="lang-pct">6.1%</text>
+        <text x="300" y="0" class="lang-pct">4.2%</text>
 
         <!-- Pista de fondo de la barra -->
         <rect x="0" y="8" width="270" height="7" rx="3.5" fill="#21262d" />
 
         <!-- Barra de progreso con width explícito + animación por escalado -->
-        <rect class="bar bar-5" x="0" y="8" width="16.4" height="7" rx="3.5" fill="#178600" />
+        <rect class="bar bar-5" x="0" y="8" width="11.2" height="7" rx="3.5" fill="#178600" />
       </g>
     
       <g class="lang-row" transform="translate(25, 325)">
         <circle cx="6" cy="-4" r="5" fill="#aace60" />
         <text x="20" y="0" class="lang-name">HLSL</text>
-        <text x="300" y="0" class="lang-pct">3.0%</text>
+        <text x="300" y="0" class="lang-pct">2.0%</text>
 
         <!-- Pista de fondo de la barra -->
         <rect x="0" y="8" width="270" height="7" rx="3.5" fill="#21262d" />
 
         <!-- Barra de progreso con width explícito + animación por escalado -->
-        <rect class="bar bar-6" x="0" y="8" width="8.0" height="7" rx="3.5" fill="#aace60" />
+        <rect class="bar bar-6" x="0" y="8" width="5.5" height="7" rx="3.5" fill="#aace60" />
       </g>
     
       <g class="lang-row" transform="translate(25, 370)">
         <circle cx="6" cy="-4" r="5" fill="#3178c6" />
         <text x="20" y="0" class="lang-name">TypeScript</text>
-        <text x="300" y="0" class="lang-pct">0.9%</text>
+        <text x="300" y="0" class="lang-pct">0.6%</text>
 
         <!-- Pista de fondo de la barra -->
         <rect x="0" y="8" width="270" height="7" rx="3.5" fill="#21262d" />
