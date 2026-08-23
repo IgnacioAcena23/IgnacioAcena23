@@ -1,15 +1,15 @@
-name: Update GitHub Stats SVG
+name: Update Profile Stats SVG
 
 on:
   schedule:
-    - cron: '0 */2 * * *' # Se ejecuta en el minuto 0 de cada 2 horas (00:00, 02:00, 04:00, etc. UTC)
-  workflow_dispatch: # Permite ejecutar el Action manualmente desde la pestaña Actions
+    - cron: '0 */2 * * *' # Se ejecuta cada 2 horas
+  workflow_dispatch: # Permite ejecución manual
 
 jobs:
   update-svg:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # Permiso para hacer commit y push del archivo generado
+      contents: write
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -19,21 +19,19 @@ jobs:
         with:
           node-version: '22'
 
-      - name: Execute script
+      - name: Execute script for language stats
         env:
           GH_TOKEN: ${{ secrets.GH_PAT }}
         run: node generate-stats.js
+
+      - name: Download Streak Stats SVG
+        run: |
+          # Descarga a un archivo temporal y solo reemplaza si la petición fue exitosa (código 200)
+          curl -s -f "https://streak-stats.demolab.com/?user=IgnacioAcena23&theme=tokyonight&hide_border=true" -o streak.svg.tmp && mv streak.svg.tmp streak.svg || echo "No se pudo actualizar streak.svg, conservando archivo previo."
 
       - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          
-          # Verifica que el archivo exista y no tenga tamaño 0 bytes antes de commitear
-          if [ -s languages.svg ]; then
-            git add languages.svg
-            git diff --staged --quiet || (git commit -m "build: update language stats SVG [skip ci]" && git push)
-          else
-            echo "Error: languages.svg está vacío o no se generó correctamente."
-            exit 1
-          fi
+          git add languages.svg streak.svg
+          git diff --staged --quiet || (git commit -m "build: update profile stats [skip ci]" && git push)
