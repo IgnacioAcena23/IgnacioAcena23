@@ -28,5 +28,12 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add languages.svg
-          git diff --staged --quiet || (git commit -m "build: update language stats SVG [skip ci]" && git push)
+          
+          # Verifica que el archivo exista y no tenga tamaño 0 bytes antes de commitear
+          if [ -s languages.svg ]; then
+            git add languages.svg
+            git diff --staged --quiet || (git commit -m "build: update language stats SVG [skip ci]" && git push)
+          else
+            echo "Error: languages.svg está vacío o no se generó correctamente."
+            exit 1
+          fi
