@@ -29,7 +29,6 @@
         <img src="https://img.shields.io/badge/Plugin-Obsidian--Trello-7952B3?style=for-the-badge&logo=obsidian&logoColor=white&labelColor=0D1117" alt="Plugin de Trello en Obsidian" />
       </a>
       <br /><br />
-      <img src="https://streak-stats.demolab.com/?user=IgnacioAcena23&theme=tokyonight&hide_border=true&v=1" alt="Racha de Contribuciones" width="100%" />
     </td>
   </tr>
 </table>
