@@ -155,7 +155,7 @@
       </g>
     
       <g class="lang-row" transform="translate(25, 280)">
-        <circle cx="6" cy="-4" r="5" fill="#178600" />
+        <circle cx="6" cy="-4" r="5" fill="#7355dd" />
         <text x="20" y="0" class="lang-name">C#</text>
         <text x="300" y="0" class="lang-pct">3.5%</text>
 
@@ -163,7 +163,7 @@
         <rect x="0" y="8" width="270" height="7" rx="3.5" fill="#21262d" />
 
         <!-- Barra de progreso con width explícito + animación por escalado -->
-        <rect class="bar bar-5" x="0" y="8" width="9.3" height="7" rx="3.5" fill="#178600" />
+        <rect class="bar bar-5" x="0" y="8" width="9.3" height="7" rx="3.5" fill="#7355dd" />
       </g>
     
       <g class="lang-row" transform="translate(25, 325)">
