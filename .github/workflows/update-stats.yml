@@ -26,8 +26,29 @@ jobs:
 
       - name: Download Streak Stats SVG
         run: |
-          # Descarga a un archivo temporal y solo reemplaza si la petición fue exitosa (código 200)
-          curl -s -f "https://streak-stats.demolab.com/?user=IgnacioAcena23&theme=tokyonight&hide_border=true" -o streak.svg.tmp && mv streak.svg.tmp streak.svg || echo "No se pudo actualizar streak.svg, conservando archivo previo."
+          URLS=(
+            "https://github-readme-streak-stats-eight.vercel.app/?user=IgnacioAcena23&theme=tokyonight&hide_border=true"
+            "https://streak-stats.demolab.com/?user=IgnacioAcena23&theme=tokyonight&hide_border=true"
+          )
+          SUCCESS=0
+          for url in "${URLS[@]}"; do
+            echo "Intentando obtener streak SVG desde: $url"
+            if curl -s -f "$url" -o streak.svg.tmp; then
+              if grep -q "Total Contributions" streak.svg.tmp && ! grep -q "Failed to retrieve contributions" streak.svg.tmp; then
+                mv streak.svg.tmp streak.svg
+                echo "Streak stats actualizado con éxito."
+                SUCCESS=1
+                break
+              else
+                echo "El SVG contiene un mensaje de error o formato inválido, probando siguiente..."
+                rm -f streak.svg.tmp
+              fi
+            fi
+          done
+
+          if [ $SUCCESS -eq 0 ]; then
+            echo "No se pudo actualizar streak.svg en este intento, conservando archivo previo."
+          fi
 
       - name: Commit and push changes
         run: |

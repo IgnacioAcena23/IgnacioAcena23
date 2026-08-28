@@ -29,6 +29,7 @@
         <img src="https://img.shields.io/badge/Plugin-Obsidian--Trello-7952B3?style=for-the-badge&logo=obsidian&logoColor=white&labelColor=0D1117" alt="Plugin de Trello en Obsidian" />
       </a>
       <br /><br />
+      <img src="./streak.svg" alt="GitHub Streak Stats" width="100%" />
     </td>
   </tr>
 </table>
